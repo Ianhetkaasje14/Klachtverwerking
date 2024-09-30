@@ -8,10 +8,10 @@ use Symfony\Component\Dotenv\Dotenv;
 
 
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '/.env');
+$dotenv->load(__DIR__ . '/../.env');
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -73,7 +73,7 @@ try {
 <html lang="en">
 
 <head>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
